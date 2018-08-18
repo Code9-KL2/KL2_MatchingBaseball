@@ -25,7 +25,7 @@ namespace KL2_MatchingBaseball
 
         private void Btn1_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this, typeof(Activity1));
+            Intent intent = new Intent(this, typeof(Side_Act));
             StartActivity(intent);
         }
     }

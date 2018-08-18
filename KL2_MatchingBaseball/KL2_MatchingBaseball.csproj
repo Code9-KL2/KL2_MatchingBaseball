@@ -55,7 +55,8 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity1.cs" />
+    <Compile Include="Side_Act.cs" />
+    <Compile Include="Side_Act2.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,12 +96,12 @@
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout1.axml">
+    <AndroidResource Include="Resources\layout\Side_Layout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout2.axml">
+    <AndroidResource Include="Resources\layout\Side_Layout2.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
