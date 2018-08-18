@@ -12,15 +12,15 @@ using Android.Widget;
 
 namespace KL2_MatchingBaseball
 {
-    [Activity(Label = "Activity1")]
-    public class Activity1 : Activity
+    [Activity(Label = "Activity2")]
+    public class Side_Act2 : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-            SetContentView(Resource.Layout.layout1);
+            SetContentView(Resource.Layout.Side_Layout);
         }
     }
 }
