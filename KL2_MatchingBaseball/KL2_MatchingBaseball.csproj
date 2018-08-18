@@ -55,6 +55,7 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Help_Activity.cs" />
     <Compile Include="Side_Act.cs" />
     <Compile Include="Side_Act2.cs" />
     <Compile Include="MainActivity.cs" />
@@ -102,6 +103,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Side_Layout2.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Help_activityLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
