@@ -2438,38 +2438,38 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f0800b0
 			public const int button1 = 2131230896;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int button10 = 2131230909;
-			
 			// aapt resource value: 0x7f0800be
-			public const int button11 = 2131230910;
+			public const int button10 = 2131230910;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int button12 = 2131230908;
+			// aapt resource value: 0x7f0800bf
+			public const int button11 = 2131230911;
 			
-			// aapt resource value: 0x7f0800b1
-			public const int button2 = 2131230897;
+			// aapt resource value: 0x7f0800bd
+			public const int button12 = 2131230909;
+			
+			// aapt resource value: 0x7f0800b4
+			public const int button2 = 2131230900;
 			
 			// aapt resource value: 0x7f0800b2
 			public const int button3 = 2131230898;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int button4 = 2131230900;
-			
-			// aapt resource value: 0x7f0800b6
-			public const int button5 = 2131230902;
+			// aapt resource value: 0x7f0800b5
+			public const int button4 = 2131230901;
 			
 			// aapt resource value: 0x7f0800b7
-			public const int button6 = 2131230903;
+			public const int button5 = 2131230903;
 			
 			// aapt resource value: 0x7f0800b8
-			public const int button7 = 2131230904;
+			public const int button6 = 2131230904;
 			
 			// aapt resource value: 0x7f0800b9
-			public const int button8 = 2131230905;
+			public const int button7 = 2131230905;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int button9 = 2131230907;
+			// aapt resource value: 0x7f0800ba
+			public const int button8 = 2131230906;
+			
+			// aapt resource value: 0x7f0800bc
+			public const int button9 = 2131230908;
 			
 			// aapt resource value: 0x7f080063
 			public const int buttonPanel = 2131230819;
@@ -2627,11 +2627,11 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f0800b3
 			public const int linearLayout2 = 2131230899;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int linearLayout3 = 2131230901;
+			// aapt resource value: 0x7f0800b6
+			public const int linearLayout3 = 2131230902;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int linearLayout4 = 2131230906;
+			// aapt resource value: 0x7f0800bb
+			public const int linearLayout4 = 2131230907;
 			
 			// aapt resource value: 0x7f08001d
 			public const int listMode = 2131230749;
@@ -2639,14 +2639,14 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800c1
-			public const int masked = 2131230913;
+			// aapt resource value: 0x7f0800c2
+			public const int masked = 2131230914;
 			
 			// aapt resource value: 0x7f0800a2
 			public const int media_actions = 2131230882;
 			
-			// aapt resource value: 0x7f0800bf
-			public const int message = 2131230911;
+			// aapt resource value: 0x7f0800c0
+			public const int message = 2131230912;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2849,6 +2849,9 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
+			// aapt resource value: 0x7f0800b1
+			public const int thirdbutton = 2131230897;
+			
 			// aapt resource value: 0x7f0800a7
 			public const int time = 2131230887;
 			
@@ -2897,8 +2900,8 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800c0
-			public const int visible = 2131230912;
+			// aapt resource value: 0x7f0800c1
+			public const int visible = 2131230913;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -3149,10 +3152,13 @@ namespace KL2_MatchingBaseball
 			public const int Side_Layout2 = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int support_simple_spinner_dropdown_item = 2130968638;
+			public const int SideAct3_Layout = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int tooltip = 2130968639;
+			public const int support_simple_spinner_dropdown_item = 2130968639;
+			
+			// aapt resource value: 0x7f040040
+			public const int tooltip = 2130968640;
 			
 			static Layout()
 			{

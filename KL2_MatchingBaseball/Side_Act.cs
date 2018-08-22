@@ -21,6 +21,14 @@ namespace KL2_MatchingBaseball
 
             // Create your application here
             SetContentView(Resource.Layout.Side_Layout);
+            Button thirdbutton = FindViewById<Button>(Resource.Id.thirdbutton);
+            thirdbutton.Click += thirdbutton_Click;
+        }
+
+        private void thirdbutton_Click(object sender, EventArgs e)
+        {
+            Intent intentthird = new Intent(this, typeof(ThirdActivity));
+            StartActivity(intentthird);
         }
     }
 }
