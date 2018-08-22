@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:minWidth="25px"
-	android:minHeight="25px">
-	<Button
-		android:text="Start"
-		android:layout_width="378.5dp"
-		android:layout_height="100dp"
-		android:id="@+id/btn1"
-		android:layout_marginTop="375dp"
-		android:layout_marginRight="-20dp"
-		android:textSize="50dp" />
-	<Button
-		android:text="base ball"
-		android:layout_width="405.5dp"
-		android:layout_height="315.5dp"
-		android:id="@+id/textiew2"
-		android:layout_marginTop="0dp"
-		android:layout_marginLeft="-380dp"
-		android:textSize="100dp"
-		android:layout_marginBottom="53.5dp" />
-	<Button
-		android:text="help"
-		android:layout_width="378.5dp"
-		android:layout_height="134.5dp"
-		android:id="@+id/textiew2"
-		android:layout_marginTop="250dp"
-		android:layout_marginLeft="-385dp"
-		android:textSize="50dp"
-		android:layout_marginBottom="32.5dp" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Button
+        android:text="Start"
+        android:layout_width="378.5dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn1"
+        android:layout_marginTop="375dp"
+        android:layout_marginRight="-20dp"
+        android:textSize="50dp" />
+    <Button
+        android:text="base ball"
+        android:layout_width="405.5dp"
+        android:layout_height="315.5dp"
+        android:id="@+id/textiew2"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="-380dp"
+        android:textSize="100dp"
+        android:layout_marginBottom="53.5dp" />
+    <Button
+        android:text="help"
+        android:layout_width="378.5dp"
+        android:layout_height="134.5dp"
+        android:id="@+id/btn2"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="-385dp"
+        android:textSize="50dp"
+        android:layout_marginBottom="32.5dp" />
 </LinearLayout>
