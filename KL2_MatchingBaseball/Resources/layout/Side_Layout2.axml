@@ -77,7 +77,7 @@
         p1:layout_height="match_parent"
         p1:id="@+id/button10" />
     <Button
-        p1:text="X"
+        p1:text="NOTHING"
         p1:id="@+id/button11"
         p1:layout_width="wrap_content"
         p1:layout_height="match_parent" />
