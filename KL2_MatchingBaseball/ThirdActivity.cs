@@ -15,6 +15,8 @@ namespace KL2_MatchingBaseball
     [Activity(Label = "ThirdActivity")]
     public class ThirdActivity : Activity
     {
+        TextView textview;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -36,6 +38,7 @@ namespace KL2_MatchingBaseball
             FindViewById(Resource.Id.button0);
             FindViewById(Resource.Id.buttonEnter);
             FindViewById(Resource.Id.buttonX);
+            FindViewById(Resource.Id.textview);
             Button button1 = FindViewById<Button>(Resource.Id.button1);
             Button button2 = FindViewById<Button>(Resource.Id.button2);
             Button button3 = FindViewById<Button>(Resource.Id.button3);
@@ -46,9 +49,16 @@ namespace KL2_MatchingBaseball
             Button button8 = FindViewById<Button>(Resource.Id.button8);
             Button button9 = FindViewById<Button>(Resource.Id.button9);
             Button button0 = FindViewById<Button>(Resource.Id.button0);
+            textview = FindViewById<TextView>(Resource.Id.textview);
+            button0.Click += Button0_Click;
             // Create your application here
             SetContentView(Resource.Layout.SideAct3_Layout);
 
+        }
+
+        private void Button0_Click(object sender, EventArgs e)
+        {
+            textview.Text = "0";
         }
     }
 }
