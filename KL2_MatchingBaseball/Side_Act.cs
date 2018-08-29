@@ -21,10 +21,17 @@ namespace KL2_MatchingBaseball
 
             // Create your application here
             SetContentView(Resource.Layout.Side_Layout);
-
+            Button Three_Number = FindViewById<Button>(Resource.Id.thirdbutton);
             Button Four_Number = FindViewById<Button>(Resource.Id.button3);
 
             Four_Number.Click += Four_Number_Click;
+            Three_Number.Click += Three_Number_Click;
+        }
+
+        private void Three_Number_Click(object sender, EventArgs e)
+        {
+            Intent intent3 = new Intent(this, typeof(ThirdActivity));
+            StartActivity(intent3);
         }
 
         private void Four_Number_Click(object sender, EventArgs e)

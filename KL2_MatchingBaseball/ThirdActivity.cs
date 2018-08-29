@@ -20,6 +20,8 @@ namespace KL2_MatchingBaseball
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.SideAct3_Layout);
+
             Random random = new Random();
             for (int i = 1; i <= 3; i++)
             {
