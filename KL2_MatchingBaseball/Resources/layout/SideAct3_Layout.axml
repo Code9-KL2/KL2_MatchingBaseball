@@ -70,16 +70,27 @@
             p1:text="0"
             p1:layout_width="wrap_content"
             p1:layout_height="match_parent"
-            p1:id="@+id/button12" />
+            p1:id="@+id/button0" />
         <Button
             p1:text="Enter"
             p1:layout_width="wrap_content"
             p1:layout_height="match_parent"
-            p1:id="@+id/button10" />
+            p1:id="@+id/buttonEnter" />
         <Button
             p1:text="X"
-            p1:id="@+id/button11"
+            p1:id="@+id/buttonX"
             p1:layout_width="wrap_content"
             p1:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="104.0dp"
+        p1:id="@+id/linearLayout4">
+        <TextView
+            p1:text=""
+            p1:id="@+id/textview"
+            p1:layout_height="match_parent"
+            p1:layout_width="wrap_content" />
     </LinearLayout>
 </LinearLayout>
