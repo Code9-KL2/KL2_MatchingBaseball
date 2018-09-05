@@ -86,11 +86,14 @@
         p1:orientation="horizontal"
         p1:layout_width="match_parent"
         p1:layout_height="104.0dp"
-        p1:id="@+id/linearLayout4">
+        p1:id="@+id/linearLayout4"
+        p1:minWidth="25px"
+        p1:minHeight="25px">
         <TextView
             p1:text=""
             p1:id="@+id/textview"
             p1:layout_height="match_parent"
-            p1:layout_width="wrap_content" />
+            p1:layout_width="381.5dp"
+            p1:textSize="75sp" />
     </LinearLayout>
 </LinearLayout>
