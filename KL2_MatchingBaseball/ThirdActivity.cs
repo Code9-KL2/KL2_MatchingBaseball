@@ -20,25 +20,15 @@ namespace KL2_MatchingBaseball
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.SideAct3_Layout);
+
             Random random = new Random();
             for (int i = 1; i <= 3; i++)
             {
                 int RandomNum = random.Next(0, 9);
             }
-            
-            FindViewById(Resource.Id.button1);
-            FindViewById(Resource.Id.button2);
-            FindViewById(Resource.Id.button3);
-            FindViewById(Resource.Id.button4);
-            FindViewById(Resource.Id.button5);
-            FindViewById(Resource.Id.button6);
-            FindViewById(Resource.Id.button7);
-            FindViewById(Resource.Id.button8);
-            FindViewById(Resource.Id.button9);
-            FindViewById(Resource.Id.button0);
-            FindViewById(Resource.Id.buttonEnter);
-            FindViewById(Resource.Id.buttonX);
-            FindViewById(Resource.Id.textview);
+
+
             Button button1 = FindViewById<Button>(Resource.Id.button1);
             Button button2 = FindViewById<Button>(Resource.Id.button2);
             Button button3 = FindViewById<Button>(Resource.Id.button3);
@@ -51,14 +41,80 @@ namespace KL2_MatchingBaseball
             Button button0 = FindViewById<Button>(Resource.Id.button0);
             textview = FindViewById<TextView>(Resource.Id.textview);
             button0.Click += Button0_Click;
-            // Create your application here
-            SetContentView(Resource.Layout.SideAct3_Layout);
+            button1.Click += Button1_Click;
+            button2.Click += Button2_Click;
+            button3.Click += Button3_Click;
+            button4.Click += Button4_Click;
+            button5.Click += Button5_Click;
+            button6.Click += Button6_Click;
+            button7.Click += Button7_Click;
+            button8.Click += Button8_Click;
+            button9.Click += Button9_Click;
 
+
+
+
+
+
+
+
+
+
+
+
+            // Create your application here
+
+        }
+
+        private void Button9_Click(object sender, EventArgs e)
+        {
+            textview.Text = "9";
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            textview.Text = "8";
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            textview.Text = "7";
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            textview.Text = "6";
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            textview.Text = "5";
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            textview.Text = "4";
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            textview.Text = "3";
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            textview.Text = "2";
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            textview.Text = "1";
         }
 
         private void Button0_Click(object sender, EventArgs e)
         {
             textview.Text = "0";
         }
+        
     }
 }
