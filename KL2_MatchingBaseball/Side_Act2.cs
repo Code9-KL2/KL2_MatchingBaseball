@@ -27,8 +27,7 @@ namespace KL2_MatchingBaseball
             }
             Random random = new Random();
             int n = random.Next(0, 9);
-            string number = Convert.ToString(n);
-            
+            string number = Convert.ToString(n);            
             
         }
     }
