@@ -125,13 +125,6 @@ namespace KL2_MatchingBaseball
                 }
                 showGameEnd(win);
             }
-            static void Main(string[] args)
-            {
-                Program m = new Program();
-                m.NumberBaseBall();
-                m.run();
-
-            }
         }
     }
 }
