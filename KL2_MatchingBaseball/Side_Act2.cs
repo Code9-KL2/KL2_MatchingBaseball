@@ -70,7 +70,8 @@ namespace KL2_MatchingBaseball
 
         private void Enter_Click(object sender, EventArgs e)
         {
-            string User_Answer = User_Input1 + User_Input2 + User_Input3 + User_Input4;
+        
+            string User_Answer = User_Input4 + User_Input3 + User_Input2 + User_Input1;
             if (Answer == )
 
         }
@@ -80,14 +81,17 @@ namespace KL2_MatchingBaseball
             if (Count == 0)
             {
                 User_Input1 = "9";
+                Count = 1;
             }
             else if (Count == 1)
             {
                 User_Input2 = "9";
+                Count = 2;
             }
             else if (Count == 2)
             {
                 User_Input3 = "9";
+                Count = 3;
             }
             else if (Count == 3)
             {

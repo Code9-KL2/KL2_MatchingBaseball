@@ -63,12 +63,12 @@ namespace KL2_MatchingBaseball
             // Create your application here
 
         }
-        public void preventtextview(string a, string b, string c, string d, string e, string f, string g, string h, string i,string j)
+        public void preventtextview(string a)
         {
             if (textview.Text.Length < 3)
             {
                 
-               textview.Text = textview.Text + a + b + c + d + e + f + g + h + i + j;
+               textview.Text = textview.Text + a
 
 
             }
@@ -91,53 +91,52 @@ namespace KL2_MatchingBaseball
 
         private void Button9_Click(object sender, EventArgs e)
         {
-            preventtextview("", "", "", "", "", "", "", "", "", "9");
-
+            preventtextview("9");
         }
 
         private void Button8_Click(object sender, EventArgs e)
         {
-            preventtextview("", "", "", "", "", "", "", "", "8","");
+            preventtextview("8");
         }
 
         private void Button7_Click(object sender, EventArgs e)
         {
-            preventtextview("", "", "", "", "", "", "", "7", "", "");
+            preventtextview("7");
         }
 
         private void Button6_Click(object sender, EventArgs e)
         {
-            preventtextview("", "", "", "", "", "", "6", "","", "");
+            preventtextview("6");
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            preventtextview("", "", "", "", "", "5", "", "", "", "");
+            preventtextview("5");
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            preventtextview("", "", "", "", "4", "", "", "", "", "");
+            preventtextview("4");
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            preventtextview("", "", "", "3", "", "", "", "", "", "");
+            preventtextview("3");
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            preventtextview("", "", "2", "", "", "", "", "", "", "");
+            preventtextview("2");
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            preventtextview("", "1", "", "", "", "", "", "", "", "");
+            preventtextview("1");
         }
 
         private void Button0_Click(object sender, EventArgs e)
         {
-            preventtextview("0", "", "", "", "", "", "", "", "", "");
+            preventtextview("0");
         }
         
     }
