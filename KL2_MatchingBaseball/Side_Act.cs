@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 using Android.App;
 using Android.Content;
@@ -15,6 +16,23 @@ namespace KL2_MatchingBaseball
     [Activity(Label = "Side_Act")]
     public class Side_Act : Activity
     {
+        int a;
+        string msg;
+
+        public Side_Act()
+        {
+            a = 0;
+            msg = " ";
+            
+            
+        }
+        public int input()
+        {
+            Toast.MakeText(this, "0 - 9_사이의_숫자_입력", ToastLength.Long).Show();
+
+            a = int.Parse(msg);
+            return a;
+        }
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -26,6 +44,7 @@ namespace KL2_MatchingBaseball
 
             Four_Number.Click += Four_Number_Click;
             Three_Number.Click += Three_Number_Click;
+
         }
 
         private void Three_Number_Click(object sender, EventArgs e)
