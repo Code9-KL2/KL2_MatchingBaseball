@@ -273,12 +273,9 @@ namespace KL2_MatchingBaseball
             {
                 User_Input3 = "0";
             }
-            static void Main(string[] args)
+            else if (Count == 3)
             {
-                Program m = new Program();
-                m.NumberBaseBall();
-                m.run();
-
+                User_Input4 = "0";
             }
         }
     }
