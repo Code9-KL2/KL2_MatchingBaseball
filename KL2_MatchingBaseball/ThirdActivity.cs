@@ -16,7 +16,8 @@ namespace KL2_MatchingBaseball
     public class ThirdActivity : Activity
     {
         TextView textview;
-
+        string textview1;
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -39,6 +40,7 @@ namespace KL2_MatchingBaseball
             Button button8 = FindViewById<Button>(Resource.Id.button8);
             Button button9 = FindViewById<Button>(Resource.Id.button9);
             Button button0 = FindViewById<Button>(Resource.Id.button0);
+            Button buttonX = FindViewById<Button>(Resource.Id.buttonX);
             textview = FindViewById<TextView>(Resource.Id.textview);
             button0.Click += Button0_Click;
             button1.Click += Button1_Click;
@@ -50,11 +52,7 @@ namespace KL2_MatchingBaseball
             button7.Click += Button7_Click;
             button8.Click += Button8_Click;
             button9.Click += Button9_Click;
-
-
-
-
-
+            buttonX.Click += ButtonX_Click;
 
 
 
@@ -65,55 +63,81 @@ namespace KL2_MatchingBaseball
             // Create your application here
 
         }
+        public void preventtextview(string a, string b, string c, string d, string e, string f, string g, string h, string i,string j)
+        {
+            if (textview.Text.Length < 3)
+            {
+                
+               textview.Text = textview.Text + a + b + c + d + e + f + g + h + i + j;
+
+
+            }
+
+
+
+
+
+
+        }
+        
+
+
+
+        private void ButtonX_Click(object sender, EventArgs e)
+        {
+            
+            textview.Text = "";
+        }
 
         private void Button9_Click(object sender, EventArgs e)
         {
-            textview.Text = "9";
+            preventtextview("", "", "", "", "", "", "", "", "", "9");
+
         }
 
         private void Button8_Click(object sender, EventArgs e)
         {
-            textview.Text = "8";
+            preventtextview("", "", "", "", "", "", "", "", "8","");
         }
 
         private void Button7_Click(object sender, EventArgs e)
         {
-            textview.Text = "7";
+            preventtextview("", "", "", "", "", "", "", "7", "", "");
         }
 
         private void Button6_Click(object sender, EventArgs e)
         {
-            textview.Text = "6";
+            preventtextview("", "", "", "", "", "", "6", "","", "");
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            textview.Text = "5";
+            preventtextview("", "", "", "", "", "5", "", "", "", "");
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            textview.Text = "4";
+            preventtextview("", "", "", "", "4", "", "", "", "", "");
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            textview.Text = "3";
+            preventtextview("", "", "", "3", "", "", "", "", "", "");
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            textview.Text = "2";
+            preventtextview("", "", "2", "", "", "", "", "", "", "");
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            textview.Text = "1";
+            preventtextview("", "1", "", "", "", "", "", "", "", "");
         }
 
         private void Button0_Click(object sender, EventArgs e)
         {
-            textview.Text = "0";
+            preventtextview("0", "", "", "", "", "", "", "", "", "");
         }
         
     }
