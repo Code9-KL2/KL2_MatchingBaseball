@@ -17,7 +17,11 @@ namespace KL2_MatchingBaseball
     {
         TextView textview;
         string textview1;
-        
+        int RandomNum;
+        string randomtostring;
+        int textviewsuport;
+        List<string> comparing;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -26,10 +30,13 @@ namespace KL2_MatchingBaseball
             Random random = new Random();
             for (int i = 1; i <= 3; i++)
             {
-                int RandomNum = random.Next(0, 9);
+
+                RandomNum = random.Next(0,9);
+                
             }
 
 
+            string Randomnum = Convert.ToString(RandomNum);
             Button button1 = FindViewById<Button>(Resource.Id.button1);
             Button button2 = FindViewById<Button>(Resource.Id.button2);
             Button button3 = FindViewById<Button>(Resource.Id.button3);
@@ -41,6 +48,7 @@ namespace KL2_MatchingBaseball
             Button button9 = FindViewById<Button>(Resource.Id.button9);
             Button button0 = FindViewById<Button>(Resource.Id.button0);
             Button buttonX = FindViewById<Button>(Resource.Id.buttonX);
+            Button buttonEnter = FindViewById<Button>(Resource.Id.buttonEnter);
             textview = FindViewById<TextView>(Resource.Id.textview);
             button0.Click += Button0_Click;
             button1.Click += Button1_Click;
@@ -53,7 +61,8 @@ namespace KL2_MatchingBaseball
             button8.Click += Button8_Click;
             button9.Click += Button9_Click;
             buttonX.Click += ButtonX_Click;
-
+            buttonEnter.Click += ButtonEnter_Click;    
+            comparing = new List<string>();
 
 
 
@@ -63,80 +72,96 @@ namespace KL2_MatchingBaseball
             // Create your application here
 
         }
+
+        private void ButtonEnter_Click(object sender, EventArgs e)
+        {
+            
+        }
+
         public void preventtextview(string a)
         {
             if (textview.Text.Length < 3)
             {
-                
-               textview.Text = textview.Text + a
+
+                textview.Text = textview.Text + a;
 
 
             }
 
 
 
-
-
+            
 
         }
         
-
-
-
+        
+        
         private void ButtonX_Click(object sender, EventArgs e)
         {
             
             textview.Text = "";
+            comparing.Clear();
+            
         }
 
         private void Button9_Click(object sender, EventArgs e)
         {
             preventtextview("9");
+            comparing.Add("9");
         }
 
         private void Button8_Click(object sender, EventArgs e)
         {
             preventtextview("8");
+            comparing.Add("8");
         }
 
         private void Button7_Click(object sender, EventArgs e)
         {
             preventtextview("7");
+            comparing.Add("7");
         }
 
         private void Button6_Click(object sender, EventArgs e)
         {
             preventtextview("6");
+            comparing.Add("6");
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
             preventtextview("5");
+            comparing.Add("5");
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
             preventtextview("4");
+            comparing.Add("4");
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
             preventtextview("3");
+            comparing.Add("3");
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             preventtextview("2");
+            comparing.Add("2");
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             preventtextview("1");
+            comparing.Add("1");
         }
 
         private void Button0_Click(object sender, EventArgs e)
         {
             preventtextview("0");
+            comparing.Add("0");
         }
         
     }

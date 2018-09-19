@@ -72,8 +72,6 @@ namespace KL2_MatchingBaseball
         {
         
             string User_Answer = User_Input4 + User_Input3 + User_Input2 + User_Input1;
-            if (Answer == )
-
         }
 
         private void btn9_Click(object sender, EventArgs e)
