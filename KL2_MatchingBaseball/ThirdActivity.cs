@@ -50,6 +50,7 @@ namespace KL2_MatchingBaseball
             Button buttonX = FindViewById<Button>(Resource.Id.buttonX);
             Button buttonEnter = FindViewById<Button>(Resource.Id.buttonEnter);
             textview = FindViewById<TextView>(Resource.Id.textview);
+
             button0.Click += Button0_Click;
             button1.Click += Button1_Click;
             button2.Click += Button2_Click;
