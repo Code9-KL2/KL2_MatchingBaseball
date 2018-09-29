@@ -15,6 +15,19 @@ namespace KL2_MatchingBaseball
     [Activity(Label = "Side_Act2")]
     public class Side_Act2 : Activity
     {
+        Random random;
+        int n;
+        int n1;
+        int n2;
+        int n3;
+
+        string n_string;
+        string n1_string;
+        string n2_string;
+        string n3_string;
+
+        string Answer;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -23,17 +36,17 @@ namespace KL2_MatchingBaseball
             SetContentView(Resource.Layout.Side_Layout2);
 
             Random random = new Random();
-            int n = random.Next(0, 9);
-            int n1 = random.Next(0, 9);
-            int n2 = random.Next(0, 9);
-            int n3 = random.Next(0, 9);
+            n = random.Next(0, 9);
+            n1 = random.Next(0, 9);
+            n2 = random.Next(0, 9);
+            n3 = random.Next(0, 9);
 
-            string n_string = Convert.ToString(n);
-            string n1_string = Convert.ToString(n1);
-            string n2_string = Convert.ToString(n2);
-            string n3_string = Convert.ToString(n3);
+            n_string = Convert.ToString(n);
+            n1_string = Convert.ToString(n1);
+            n2_string = Convert.ToString(n2);
+            n3_string = Convert.ToString(n3);
 
-            string Answer = n_string + n1_string + n2_string + n3_string;
+            Answer = n_string + n1_string + n2_string + n3_string;
 
             Button btn0 = FindViewById<Button>(Resource.Id.btn0);
             Button btn1 = FindViewById<Button>(Resource.Id.btn1);
@@ -60,222 +73,108 @@ namespace KL2_MatchingBaseball
             Enter.Click += Enter_Click;
 
 
-
         }
+
         int Count = 0;
         string User_Input1;
         string User_Input2;
         string User_Input3;
         string User_Input4;
 
-        private void Enter_Click(object sender, EventArgs e)
-        {
-        
-            string User_Answer = User_Input4 + User_Input3 + User_Input2 + User_Input1;
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
+        void Set_Input(string num)
         {
             if (Count == 0)
             {
-                User_Input1 = "9";
+                User_Input1 = num;
                 Count = 1;
             }
             else if (Count == 1)
             {
-                User_Input2 = "9";
+                User_Input2 = num;
                 Count = 2;
             }
             else if (Count == 2)
             {
-                User_Input3 = "9";
+                User_Input3 = num;
                 Count = 3;
             }
             else if (Count == 3)
             {
-                User_Input4 = "9";
+                User_Input4 = num;
             }
+        }
+
+        private void Enter_Click(object sender, EventArgs e)
+        {
+        
+            string User_Answer = User_Input4 + User_Input3 + User_Input2 + User_Input1;
+            while(User_Answer == Answer)
+            {
+                if(User_Answer == Answer)
+                {
+                    Console.WriteLine("홈런");
+                }
+                else if (User_Input1 == n_string || User_Input1 == n1_string || User_Input1 == n2_string || User_Input1 == n3_string || User_Input2 == n_string || User_Input2 == n1_string || User_Input2 == n2_string || User_Input2 == n3_string || User_Input3 == n_string || User_Input3 == n1_string || User_Input3 == n2_string || User_Input3 == n3_string || User_Input4 == n_string || User_Input4 == n1_string || User_Input4 == n2_string || User_Input4 == n3_string)
+                {
+                    Console.WriteLine("볼");
+                }
+                else
+                {
+                    Console.WriteLine("스트라이크");
+                }
+            }
+
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            Set_Input("9");
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            if (Count == 0)
-            {
-                User_Input1 = "8";
-            }
-            else if (Count == 1)
-            {
-                User_Input2 = "8";
-            }
-            else if (Count == 2)
-            {
-                User_Input3 = "8";
-            }
-            else if (Count == 3)
-            {
-                User_Input4 = "8";
-            }
+            Set_Input("8");
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            if (Count == 0)
-            {
-                User_Input1 = "7";
-            }
-            else if (Count == 1)
-            {
-                User_Input2 = "7";
-            }
-            else if (Count == 2)
-            {
-                User_Input3 = "7";
-            }
-            else if (Count == 3)
-            {
-                User_Input4 = "7";
-            }
+            Set_Input("7");
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            if (Count == 0)
-            {
-                User_Input1 = "6";
-            }
-            else if (Count == 1)
-            {
-                User_Input2 = "6";
-            }
-            else if (Count == 2)
-            {
-                User_Input3 = "6";
-            }
-            else if (Count == 3)
-            {
-                User_Input4 = "6";
-            }
+            Set_Input("6");
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            if (Count == 0)
-            {
-                User_Input1 = "5";
-            }
-            else if (Count == 1)
-            {
-                User_Input2 = "5";
-            }
-            else if (Count == 2)
-            {
-                User_Input3 = "5";
-            }
-            else if (Count == 3)
-            {
-                User_Input4 = "5";
-            }
+            Set_Input("5");
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            if (Count == 0)
-            {
-                User_Input1 = "4";
-            }
-            else if (Count == 1)
-            {
-                User_Input2 = "4";
-            }
-            else if (Count == 2)
-            {
-                User_Input3 = "4";
-            }
-            else if (Count == 3)
-            {
-                User_Input4 = "4";
-            }
+            Set_Input("4");
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            if (Count == 0)
-            {
-                User_Input1 = "3";
-            }
-            else if (Count == 1)
-            {
-                User_Input2 = "3";
-            }
-            else if (Count == 2)
-            {
-                User_Input3 = "3";
-            }
-            else if (Count == 3)
-            {
-                User_Input4 = "3";
-            }
+            Set_Input("3");
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if (Count == 0)
-            {
-                User_Input1 = "2";
-            }
-            else if (Count == 1)
-            {
-                User_Input2 = "2";
-            }
-            else if (Count == 2)
-            {
-                User_Input3 = "2";
-            }
-            else if (Count == 3)
-            {
-                User_Input4 = "2";
-            }
+            Set_Input("2");
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            if (Count == 0)
-            {
-                User_Input1 = "1";
-            }
-            else if (Count == 1)
-            {
-                User_Input2 = "1";
-            }
-            else if (Count == 2)
-            {
-                User_Input3 = "1";
-            }
-            else if (Count == 3)
-            {
-                User_Input4 = "1";
-            }
+            Set_Input("1");
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            if (Count == 0)
-            {
-                User_Input1 = "0";
-            }
-            else if (Count == 1)
-            {
-                User_Input2 = "0";
-            }
-            else if (Count == 2)
-            {
-                User_Input3 = "0";
-            }
-            else if (Count == 3)
-            {
-                User_Input4 = "0";
-            }
+            Set_Input("0");
         }
     }
 
-}   
+}

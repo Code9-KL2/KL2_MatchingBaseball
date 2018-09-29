@@ -2327,6 +2327,9 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f080032
 			public const int ALT = 2131230770;
 			
+			// aapt resource value: 0x7f0800c0
+			public const int Begin = 2131230912;
+			
 			// aapt resource value: 0x7f080033
 			public const int CTRL = 2131230771;
 			
