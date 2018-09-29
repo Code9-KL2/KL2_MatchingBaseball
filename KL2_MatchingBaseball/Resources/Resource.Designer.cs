@@ -2666,20 +2666,23 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f0800bc
 			public const int linearLayout4 = 2131230908;
 			
+			// aapt resource value: 0x7f0800cc
+			public const int linearlayout5 = 2131230924;
+			
 			// aapt resource value: 0x7f08001d
 			public const int listMode = 2131230749;
 			
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800ce
-			public const int masked = 2131230926;
+			// aapt resource value: 0x7f0800d0
+			public const int masked = 2131230928;
 			
 			// aapt resource value: 0x7f0800a1
 			public const int media_actions = 2131230881;
 			
-			// aapt resource value: 0x7f0800cc
-			public const int message = 2131230924;
+			// aapt resource value: 0x7f0800ce
+			public const int message = 2131230926;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2885,6 +2888,9 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f0800cb
 			public const int textview = 2131230923;
 			
+			// aapt resource value: 0x7f0800cd
+			public const int textviewScore = 2131230925;
+			
 			// aapt resource value: 0x7f0800b0
 			public const int thirdbutton = 2131230896;
 			
@@ -2936,8 +2942,8 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800cd
-			public const int visible = 2131230925;
+			// aapt resource value: 0x7f0800cf
+			public const int visible = 2131230927;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
