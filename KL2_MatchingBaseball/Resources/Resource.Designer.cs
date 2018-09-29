@@ -2227,8 +2227,26 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
+			// aapt resource value: 0x7f02006a
+			public const int avd_hide_password_1 = 2130837610;
+			
+			// aapt resource value: 0x7f02006b
+			public const int avd_hide_password_2 = 2130837611;
+			
+			// aapt resource value: 0x7f02006c
+			public const int avd_hide_password_3 = 2130837612;
+			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
+			
+			// aapt resource value: 0x7f02006d
+			public const int avd_show_password_1 = 2130837613;
+			
+			// aapt resource value: 0x7f02006e
+			public const int avd_show_password_2 = 2130837614;
+			
+			// aapt resource value: 0x7f02006f
+			public const int avd_show_password_3 = 2130837615;
 			
 			// aapt resource value: 0x7f020055
 			public const int design_bottom_navigation_item_background = 2130837589;
@@ -2309,6 +2327,9 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f080032
 			public const int ALT = 2131230770;
 			
+			// aapt resource value: 0x7f0800c0
+			public const int Begin = 2131230912;
+			
 			// aapt resource value: 0x7f080033
 			public const int CTRL = 2131230771;
 			
@@ -2324,11 +2345,11 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f080036
 			public const int SHIFT = 2131230774;
 			
+			// aapt resource value: 0x7f0800c0
+			public const int START = 2131230912;
+			
 			// aapt resource value: 0x7f080037
 			public const int SYM = 2131230775;
-			
-			// aapt resource value: 0x7f0800c0
-			public const int X = 2131230912;
 			
 			// aapt resource value: 0x7f08009e
 			public const int action0 = 2131230878;
@@ -2447,44 +2468,44 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f0800bd
 			public const int btn9 = 2131230909;
 			
-			// aapt resource value: 0x7f0800c9
-			public const int button0 = 2131230921;
+			// aapt resource value: 0x7f0800c8
+			public const int button0 = 2131230920;
 			
 			// aapt resource value: 0x7f0800af
 			public const int button1 = 2131230895;
 			
-			// aapt resource value: 0x7f0800c2
-			public const int button2 = 2131230914;
+			// aapt resource value: 0x7f0800c1
+			public const int button2 = 2131230913;
 			
 			// aapt resource value: 0x7f0800b1
 			public const int button3 = 2131230897;
 			
+			// aapt resource value: 0x7f0800c2
+			public const int button4 = 2131230914;
+			
 			// aapt resource value: 0x7f0800c3
-			public const int button4 = 2131230915;
+			public const int button5 = 2131230915;
 			
 			// aapt resource value: 0x7f0800c4
-			public const int button5 = 2131230916;
+			public const int button6 = 2131230916;
 			
 			// aapt resource value: 0x7f0800c5
-			public const int button6 = 2131230917;
+			public const int button7 = 2131230917;
 			
 			// aapt resource value: 0x7f0800c6
-			public const int button7 = 2131230918;
+			public const int button8 = 2131230918;
 			
 			// aapt resource value: 0x7f0800c7
-			public const int button8 = 2131230919;
+			public const int button9 = 2131230919;
 			
-			// aapt resource value: 0x7f0800c8
-			public const int button9 = 2131230920;
-			
-			// aapt resource value: 0x7f0800ca
-			public const int buttonEnter = 2131230922;
+			// aapt resource value: 0x7f0800c9
+			public const int buttonEnter = 2131230921;
 			
 			// aapt resource value: 0x7f080063
 			public const int buttonPanel = 2131230819;
 			
-			// aapt resource value: 0x7f0800cb
-			public const int buttonX = 2131230923;
+			// aapt resource value: 0x7f0800ca
+			public const int buttonX = 2131230922;
 			
 			// aapt resource value: 0x7f08009f
 			public const int cancel_action = 2131230879;
@@ -2648,20 +2669,23 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f0800bc
 			public const int linearLayout4 = 2131230908;
 			
+			// aapt resource value: 0x7f0800cc
+			public const int linearlayout5 = 2131230924;
+			
 			// aapt resource value: 0x7f08001d
 			public const int listMode = 2131230749;
 			
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800cf
-			public const int masked = 2131230927;
+			// aapt resource value: 0x7f0800d0
+			public const int masked = 2131230928;
 			
 			// aapt resource value: 0x7f0800a1
 			public const int media_actions = 2131230881;
 			
-			// aapt resource value: 0x7f0800cd
-			public const int message = 2131230925;
+			// aapt resource value: 0x7f0800ce
+			public const int message = 2131230926;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2852,9 +2876,6 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
 			
-			// aapt resource value: 0x7f0800c1
-			public const int textView2 = 2131230913;
-			
 			// aapt resource value: 0x7f08009a
 			public const int text_input_password_toggle = 2131230874;
 			
@@ -2867,8 +2888,11 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
-			// aapt resource value: 0x7f0800cc
-			public const int textview = 2131230924;
+			// aapt resource value: 0x7f0800cb
+			public const int textview = 2131230923;
+			
+			// aapt resource value: 0x7f0800cd
+			public const int textviewScore = 2131230925;
 			
 			// aapt resource value: 0x7f0800b0
 			public const int thirdbutton = 2131230896;
@@ -2921,8 +2945,8 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800ce
-			public const int visible = 2131230926;
+			// aapt resource value: 0x7f0800cf
+			public const int visible = 2131230927;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;

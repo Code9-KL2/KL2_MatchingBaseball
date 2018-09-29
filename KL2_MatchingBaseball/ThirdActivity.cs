@@ -9,19 +9,21 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-
 namespace KL2_MatchingBaseball
 {
     [Activity(Label = "ThirdActivity")]
     public class ThirdActivity : Activity
     {
+        string Astring;
+        int a;
         TextView textview;
         string textview1;
         int RandomNum;
         string randomtostring;
         int textviewsuport;
         List<string> comparing;
-
+        TextView textviewScore;
+        List<int> RandomList = new List<int>();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -33,6 +35,7 @@ namespace KL2_MatchingBaseball
 
                 RandomNum = random.Next(0,9);
                 
+                RandomList.Add(RandomNum);
             }
 
 
@@ -50,7 +53,7 @@ namespace KL2_MatchingBaseball
             Button buttonX = FindViewById<Button>(Resource.Id.buttonX);
             Button buttonEnter = FindViewById<Button>(Resource.Id.buttonEnter);
             textview = FindViewById<TextView>(Resource.Id.textview);
-
+            textviewScore = FindViewById<TextView>(Resource.Id.textviewScore);
             button0.Click += Button0_Click;
             button1.Click += Button1_Click;
             button2.Click += Button2_Click;
@@ -63,6 +66,7 @@ namespace KL2_MatchingBaseball
             button9.Click += Button9_Click;
             buttonX.Click += ButtonX_Click;
             buttonEnter.Click += ButtonEnter_Click;    
+            
             comparing = new List<string>();
 
 
@@ -76,8 +80,47 @@ namespace KL2_MatchingBaseball
 
         private void ButtonEnter_Click(object sender, EventArgs e)
         {
+            string RandomListString1;
+            string RandomListString2;
+            string RandomListString3;
+            RandomListString1 = Convert.ToString(RandomList[0]);
+            RandomListString2 = Convert.ToString(RandomList[1]);
+            RandomListString3 = Convert.ToString(RandomList[2]);
+            string RandomString;
+            RandomString = Convert.ToString(RandomNum);
+            if (comparing.Count == 0)
+            {
+                textviewScore.Text = "";
+                return;
+            }
+            if (comparing[0] == RandomListString1 || comparing[1] == RandomListString2 || comparing[2] == RandomListString3) 
+            {
+                textviewScore.Text = "S3";
+            }
+            else
+            {
+                if (comparing[0] == RandomListString1 || comparing[0] == RandomListString2 || comparing[0] == RandomListString3)
+                {
+                    a = 1;
+                    
+                   
+                }
+                if (comparing[1] == RandomListString1 || comparing[1] == RandomListString2 || comparing[1] == RandomListString3)
+                {
+                    a = a + 1;
+                }
+                if (comparing[2] == RandomListString1 || comparing[2] == RandomListString2 || comparing[2] == RandomListString3)
+                {
+                    a = a + 1;
+                }
+                Astring = Convert.ToString(a);
+                textviewScore.Text = "b" + a;
+
+            }
+            comparing.Clear();
             
         }
+
 
         public void preventtextview(string a)
         {
@@ -85,7 +128,7 @@ namespace KL2_MatchingBaseball
             {
 
                 textview.Text = textview.Text + a;
-
+                
 
             }
 
@@ -102,67 +145,77 @@ namespace KL2_MatchingBaseball
             
             textview.Text = "";
             comparing.Clear();
-            
+            textviewScore.Text = "";
         }
 
         private void Button9_Click(object sender, EventArgs e)
         {
             preventtextview("9");
             comparing.Add("9");
+            textviewScore.Text = "";
         }
 
         private void Button8_Click(object sender, EventArgs e)
         {
             preventtextview("8");
             comparing.Add("8");
+            textviewScore.Text = "";
         }
 
         private void Button7_Click(object sender, EventArgs e)
         {
             preventtextview("7");
             comparing.Add("7");
+            textviewScore.Text = "";
         }
 
         private void Button6_Click(object sender, EventArgs e)
         {
             preventtextview("6");
             comparing.Add("6");
+            textviewScore.Text = "";
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
             preventtextview("5");
             comparing.Add("5");
+            textviewScore.Text = "";
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
             preventtextview("4");
             comparing.Add("4");
+            textviewScore.Text = "";
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
             preventtextview("3");
             comparing.Add("3");
+            textviewScore.Text = "";
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             preventtextview("2");
             comparing.Add("2");
+            textviewScore.Text = "";
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             preventtextview("1");
             comparing.Add("1");
+            textviewScore.Text = "";
         }
 
         private void Button0_Click(object sender, EventArgs e)
         {
             preventtextview("0");
             comparing.Add("0");
+            textviewScore.Text = "";
         }
         
     }
