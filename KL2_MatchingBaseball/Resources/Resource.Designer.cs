@@ -2345,9 +2345,6 @@ namespace KL2_MatchingBaseball
 			// aapt resource value: 0x7f080036
 			public const int SHIFT = 2131230774;
 			
-			// aapt resource value: 0x7f0800c0
-			public const int START = 2131230912;
-			
 			// aapt resource value: 0x7f080037
 			public const int SYM = 2131230775;
 			
