@@ -15,16 +15,12 @@ namespace KL2_MatchingBaseball
     [Activity(Label = "Side_Act2")]
     public class Side_Act2 : Activity
     {
-        Random random;
-        int n1;
-        int n2;
-        int n3;
-        int n4;
 
-        string n1_string;
-        string n2_string;
-        string n3_string;
-        string n4_string;
+        Random random2 = new Random();
+
+        List<int> RandomList2 = new List<int>();
+        int a;
+        int RandomNum2;
         TextView text;
         string Answer;
         List<string> comparing2;
@@ -36,18 +32,13 @@ namespace KL2_MatchingBaseball
             // Create your application here
             SetContentView(Resource.Layout.Side_Layout2);
 
-            Random random = new Random();
-            n1 = random.Next(0, 9);
-            n2 = random.Next(0, 9);
-            n3 = random.Next(0, 9);
-            n4 = random.Next(0, 9);
 
-            n1_string = Convert.ToString(n1);
-            n2_string = Convert.ToString(n2);
-            n3_string = Convert.ToString(n3);
-            n4_string = Convert.ToString(n4);
 
-            Answer = n1_string + n2_string + n3_string + n4_string;
+            for (int i2 = 0; i2 <= 4; i2++)
+            {
+                RandomNum2 = random2.Next(0, 9);
+                RandomList2.Add(RandomNum2);
+            }
 
             Button btn0 = FindViewById<Button>(Resource.Id.btn0);
             Button btn1 = FindViewById<Button>(Resource.Id.btn1);
@@ -61,7 +52,7 @@ namespace KL2_MatchingBaseball
             Button btn9 = FindViewById<Button>(Resource.Id.btn9);
             Button Enter = FindViewById<Button>(Resource.Id.Enter);
             Button X = FindViewById<Button>(Resource.Id.X);
-            text = FindViewById<TextView>(Resource.Id.textView2);
+            text = FindViewById<TextView>(Resource.Id.TextView2);
 
             btn0.Click += btn0_Click;
             btn1.Click += btn1_Click;
@@ -93,58 +84,21 @@ namespace KL2_MatchingBaseball
             {
 
                 text.Text = text.Text + a2;
-
-
             }
         }
         private void X_Click(object sender, EventArgs e)
         {
-            text.Text = "";
+            text.Text = ""; 
         }
 
         void Set_Input(string num)
         {
-            if (Count == 0)
-            {
-                User_Input1 = num;
-                Count = 1;
-            }
-            else if (Count == 1)
-            {
-                User_Input2 = num;
-                Count = 2;
-            }
-            else if (Count == 2)
-            {
-                User_Input3 = num;
-                Count = 3;
-            }
-            else if (Count == 3)
-            {
-                User_Input4 = num;
-            }
+
         }
 
         private void Enter_Click(object sender, EventArgs e)
         {
-        
-            string User_Answer = User_Input4 + User_Input3 + User_Input2 + User_Input1;
-            while(User_Answer == Answer)
-            {
-                if(User_Answer == Answer)
-                {
-                    preventtextview2("정답!");
-                }
-                if(User_Input4 == n1_string || User_Input4 == n2_string || User_Input4 == n3_string || User_Input4 == n4_string || User_Input3 == n1_string || User_Input3 == n2_string || User_Input3 == n3_string || User_Input3 == n4_string || User_Input2 == n1_string || User_Input2 == n2_string || User_Input2 == n3_string || User_Input2 == n4_string || User_Input1 == n1_string || User_Input1 == n2_string || User_Input1 == n3_string || User_Input1 == n4_string)
-                {
-                    preventtextview2("볼!");
-                }
-                else
-                {
-                    preventtextview2("스.트.라.이.크");
-                }
-            }
-
+            
         }
 
         private void btn9_Click(object sender, EventArgs e)

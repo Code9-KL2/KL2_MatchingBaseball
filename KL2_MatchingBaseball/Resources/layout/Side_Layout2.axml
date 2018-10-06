@@ -86,6 +86,11 @@
 	<TextView
 		p1:text="Text"
 		p1:layout_width="match_parent"
-		p1:layout_height="257.0dp"
-		p1:id="@+id/textView2" />
+		p1:layout_height="122.0dp"
+		p1:id="@+id/TextView2" />
+	<TextView
+		p1:text="Text"
+		p1:layout_width="match_parent"
+		p1:layout_height="145.0dp"
+		p1:id="@+id/textView2_Score" />
 </LinearLayout>
