@@ -77,10 +77,15 @@
         p1:layout_height="match_parent"
         p1:id="@+id/Enter" />
     <Button
-        p1:text="Start"
+        p1:text="X"
         p1:layout_width="wrap_content"
         p1:layout_height="match_parent" 
-		p1:id="@+id/Begin" />
+		p1:id="@+id/X" />
 
   </LinearLayout>
+	<TextView
+		p1:text="Text"
+		p1:layout_width="match_parent"
+		p1:layout_height="114.0dp"
+		p1:id="@+id/textView2" />
 </LinearLayout>
