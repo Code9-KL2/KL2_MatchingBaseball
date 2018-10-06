@@ -95,7 +95,7 @@ namespace KL2_MatchingBaseball
             }
             if (comparing[0] == RandomListString1 || comparing[1] == RandomListString2 || comparing[2] == RandomListString3) 
             {
-                textviewScore.Text = "S3";
+                textviewScore.Text = "S" + a;
             }
             else
             {
