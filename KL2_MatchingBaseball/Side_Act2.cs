@@ -40,6 +40,7 @@ namespace KL2_MatchingBaseball
                 RandomList2.Add(RandomNum2);
             }
 
+
             Button btn0 = FindViewById<Button>(Resource.Id.btn0);
             Button btn1 = FindViewById<Button>(Resource.Id.btn1);
             Button btn2 = FindViewById<Button>(Resource.Id.btn2);
@@ -78,7 +79,7 @@ namespace KL2_MatchingBaseball
         string User_Input3;
         string User_Input4;
 
-        public void preventtextview2(string a2)
+        public void preventtextview2(int a2)
         {
             if (text.Text.Length < 3)
             {
@@ -97,68 +98,71 @@ namespace KL2_MatchingBaseball
         }
 
         private void Enter_Click(object sender, EventArgs e)
-        {
-            
+        {                           
+            for (i2 = 0; i2 <= 12;)
+            {                       
+
+            }
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
             Set_Input("9");
-            preventtextview2("9");
+            preventtextview2(9);
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
             Set_Input("8");
-            preventtextview2("8");
+            preventtextview2(8);
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
             Set_Input("7");
-            preventtextview2("7");
+            preventtextview2(7);
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
             Set_Input("6");
-            preventtextview2("6");
+            preventtextview2(6);
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
             Set_Input("5");
-            preventtextview2("5");
+            preventtextview2(5);
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
             Set_Input("4");
-            preventtextview2("4");
+            preventtextview2(4);
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
             Set_Input("3");
-            preventtextview2("3");
+            preventtextview2(3);
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
             Set_Input("2");
-            preventtextview2("2");
+            preventtextview2(2);
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
             Set_Input("1");
-            preventtextview2("1");
+            preventtextview2(1);
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
             Set_Input("0");
-            preventtextview2("0");
+            preventtextview2(0);
         }
     }
 
