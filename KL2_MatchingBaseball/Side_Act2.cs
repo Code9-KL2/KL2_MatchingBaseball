@@ -23,7 +23,11 @@ namespace KL2_MatchingBaseball
         int RandomNum2;
         TextView text;
         string Answer;
-        List<string> comparing2;
+        List<int> comparing2;
+        int Out_Count2;
+        int Ball_Count2;
+        int Strike_Count2;
+        int All_Out2;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -67,7 +71,7 @@ namespace KL2_MatchingBaseball
             btn9.Click += btn9_Click;
             X.Click += X_Click;
             Enter.Click += Enter_Click;
-            comparing2 = new List<string>();
+            comparing2 = new List<int>();
 
 
 
@@ -79,11 +83,10 @@ namespace KL2_MatchingBaseball
         string User_Input3;
         string User_Input4;
 
-        public void preventtextview2(int a2)
+        public void preventtextview2(string a2)
         {
             if (text.Text.Length < 3)
             {
-
                 text.Text = text.Text + a2;
             }
         }
@@ -98,71 +101,108 @@ namespace KL2_MatchingBaseball
         }
 
         private void Enter_Click(object sender, EventArgs e)
-        {                           
-            for (i2 = 0; i2 <= 12;)
-            {                       
+        {
+            for (int i2 = 0; i2 < RandomList2.Count; i2++)
+            {
+                for (int k2 = 0; k2 < comparing2.Count; k2++)
+                {
+                    int value_i2 = RandomList2[i2];
+                    int value_k2 = comparing2[k2];
+                    if (value_i2 == value_k2)
+                    {
+                        if (i2 == k2)
+                        {
+                            Strike_Count2++;
+                        }
+                        else
+                        {
+                            Ball_Count2++;
+                        }
+                    }
+                    else
+                    {
+                        Out_Count2++;
+                    }
 
+                    if (Out_Count2 == comparing2.Count)
+                    {
+                        Out_Count2 = 0;
+                        All_Out2++;
+                    }
+
+                }
+                preventtextview2(Strike_Count2 + "S " + Ball_Count2 + "B");
             }
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
             Set_Input("9");
-            preventtextview2(9);
+            preventtextview2("9");
+            comparing2.Add(9);
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
             Set_Input("8");
-            preventtextview2(8);
+            preventtextview2("8");
+            comparing2.Add(8);
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
             Set_Input("7");
-            preventtextview2(7);
+            preventtextview2("7");
+            comparing2.Add(7);
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
             Set_Input("6");
-            preventtextview2(6);
+            preventtextview2("6");
+            comparing2.Add(6);
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
             Set_Input("5");
-            preventtextview2(5);
+            preventtextview2("5");
+            comparing2.Add(5);
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
             Set_Input("4");
-            preventtextview2(4);
+            preventtextview2("4");
+            comparing2.Add(4);
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
             Set_Input("3");
-            preventtextview2(3);
+            preventtextview2("3");
+            comparing2.Add(3);
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
             Set_Input("2");
-            preventtextview2(2);
+            preventtextview2("2");
+            comparing2.Add(2);
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
             Set_Input("1");
-            preventtextview2(1);
+            preventtextview2("1");
+            comparing2.Add(1);
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
             Set_Input("0");
-            preventtextview2(0);
+            preventtextview2("0");
+            comparing2.Add(0);
         }
     }
 

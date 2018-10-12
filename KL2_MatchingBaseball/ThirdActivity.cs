@@ -114,6 +114,7 @@ namespace KL2_MatchingBaseball
                     {
                         Out_Count++;
                     }
+
                     if(Out_Count == Comparing.Count)
                     {
                         Out_Count = 0;
