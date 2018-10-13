@@ -84,12 +84,12 @@
 
   </LinearLayout>
 	<TextView
-		p1:text="Text"
+		p1:text=""
 		p1:layout_width="match_parent"
 		p1:layout_height="122.0dp"
 		p1:id="@+id/TextView2" />
 	<TextView
-		p1:text="Text"
+		p1:text=""
 		p1:layout_width="match_parent"
 		p1:layout_height="145.0dp"
 		p1:id="@+id/textView2_Score" />

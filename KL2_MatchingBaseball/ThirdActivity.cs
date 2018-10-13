@@ -25,8 +25,18 @@ namespace KL2_MatchingBaseball
         string RandomString;
         int RandomNum;
         string randomtostring;
+
+
+
+
+
+        int Out_Count;
+        int Ball_Count;
+        int Strike_Count;
+        int All_Out;
+
         int textviewsuport;
-        List<string> comparing;
+        List<int> Comparing;
         TextView textviewScore;
         List<int> RandomList = new List<int>();
 
@@ -71,13 +81,6 @@ namespace KL2_MatchingBaseball
             button9.Click += Button9_Click;
             buttonX.Click += ButtonX_Click;
             buttonEnter.Click += ButtonEnter_Click;    
-            
-            comparing = new List<string>();
-
-
-
-
-
 
             // Create your application here
 
@@ -85,62 +88,48 @@ namespace KL2_MatchingBaseball
 
         public void preventtextview(string a)
         {
-            string RandomListString1;
-            string RandomListString2;
-            string RandomListString3;
-            RandomListString1 = Convert.ToString(RandomList[0]);
-            RandomListString2 = Convert.ToString(RandomList[1]);
-            RandomListString3 = Convert.ToString(RandomList[2]);
-            string RandomString;
-            RandomString = Convert.ToString(RandomNum);
-            if (comparing.Count == 0)
-            {
-                textviewScore.Text = "";
-                return;
-            }
-            if (comparing[0] == RandomListString1 || comparing[1] == RandomListString2 || comparing[2] == RandomListString3) 
-            {
-                textviewScore.Text = "S" + a;
-            }
-            else
-            {
-                if (comparing[0] == RandomListString1 || comparing[0] == RandomListString2 || comparing[0] == RandomListString3)
-                {
-                    a = 1;
-                    
-                   
-                }
-                if (comparing[1] == RandomListString1 || comparing[1] == RandomListString2 || comparing[1] == RandomListString3)
-                {
-                    a = a + 1;
-                }
-                if (comparing[2] == RandomListString1 || comparing[2] == RandomListString2 || comparing[2] == RandomListString3)
-                {
-                    a = a + 1;
-                }
-                Astring = Convert.ToString(a);
-                textviewScore.Text = "b" + a;
-
-            }
-            comparing.Clear();
-            
-        }
-
-
-        public void preventtextview(string a)
-        {
             if (textview.Text.Length < 3)
             {
-
                 textview.Text = textview.Text + a;
-                
-
             }
+        }
 
+        private void ButtonEnter_Click(object sender, EventArgs e)
+        {
 
+            for (int i = 0; i < RandomList.Count; i++)
+            {
+                for (int k = 0; k < Comparing.Count; k++)
+                {
+                    int value_i = RandomList[i];
+                    int value_k = Comparing[k];
+                    if (value_i == value_k)
+                    {
+                        if (i == k)
+                        {
+                            Strike_Count++;
+                        }
+                        else
+                        {
+                            Ball_Count++;
+                        }
+                    }
+                    else
+                    {
+                        Out_Count++;
+                    }
 
+                    if(Out_Count == Comparing.Count)
+                    {
+                        Out_Count = 0;
+                        All_Out++;
+                    }
+
+                }
+                
+                preventtextview(Strike_Count + "S " + Ball_Count + "B");
+            }
             
-
         }
 
           
@@ -155,70 +144,70 @@ namespace KL2_MatchingBaseball
         private void Button9_Click(object sender, EventArgs e)
         {
             preventtextview("9");
-            comparing.Add("9");
+            Comparing.Add(9);
             textviewScore.Text = "";
         }
 
         private void Button8_Click(object sender, EventArgs e)
         {
             preventtextview("8");
-            comparing.Add("8");
+            Comparing.Add(8);
             textviewScore.Text = "";
         }
 
         private void Button7_Click(object sender, EventArgs e)
         {
             preventtextview("7");
-            comparing.Add("7");
+            Comparing.Add(7);
             textviewScore.Text = "";
         }
 
         private void Button6_Click(object sender, EventArgs e)
         {
             preventtextview("6");
-            comparing.Add("6");
+            Comparing.Add(6);
             textviewScore.Text = "";
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
             preventtextview("5");
-            comparing.Add("5");
+            Comparing.Add(5);
             textviewScore.Text = "";
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
             preventtextview("4");
-            comparing.Add("4");
+            Comparing.Add(4);
             textviewScore.Text = "";
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
             preventtextview("3");
-            comparing.Add("3");
+            Comparing.Add(3);
             textviewScore.Text = "";
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             preventtextview("2");
-            comparing.Add("2");
+            Comparing.Add(2);
             textviewScore.Text = "";
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             preventtextview("1");
-            comparing.Add("1");
+            Comparing.Add(1);
             textviewScore.Text = "";
         }
 
         private void Button0_Click(object sender, EventArgs e)
         {
             preventtextview("0");
-            comparing.Add("0");
+            Comparing.Add(0);
             textviewScore.Text = "";
         }
         
