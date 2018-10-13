@@ -122,6 +122,7 @@ namespace KL2_MatchingBaseball
                     }
 
                 }
+                
                 preventtextview(Strike_Count + "S " + Ball_Count + "B");
             }
             
