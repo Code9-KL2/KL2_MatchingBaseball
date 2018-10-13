@@ -12,16 +12,18 @@ using Android.Widget;
 namespace KL2_MatchingBaseball
 {
     [Activity(Label = "ThirdActivity")]
+
     public class ThirdActivity : Activity
     {
-
-        string Astring;
-        int a;
+        int BallCount = 0;
+        int StrikeCount = 0;
+        int strikeCount = 0;
+        int ballCount = 0;
+        int outCount = 0;
+        int AlloutCount = 0;
         TextView textview;
         string RandomString;
         int RandomNum;
-        string randomtostring;
-        int textviewsuport;
         List<int> comparing = new List<int>();
         List<int> test = new List<int>();
         TextView textviewScore;
@@ -78,26 +80,51 @@ namespace KL2_MatchingBaseball
         }
 
         private void ButtonEnter_Click(object sender, EventArgs e)
-        {   
+        {
             for (int i = 0; i < RandomList.Count; i++)
             {
-                for (int j = 0; j < comparing.Count; j++)
+                for (int k = 0; k < comparing.Count; k++)
                 {
-                    if (RandomList[i] == comparing[j])
+                    int systemNumber_i = RandomList[i];
+                    int userNumber_k = comparing[k];
+                    if (systemNumber_i == userNumber_k)
                     {
-                        int a = 0;
-                        a = a + 1;
-
-
-
+                        if (i == k)
+                        {
+                            strikeCount++;
+                        }
+                        else
+                        {
+                            ballCount++;
+                        }
                     }
-                    
+                    else
+                    {
+                        outCount++;
+                    }
+
                 }
-                textviewScore.Text = "S" + a;
-
-
+                if (outCount == comparing.Count)
+                {
+                    outCount = 0;
+                    AlloutCount++;
+                }
+                outCount = 0;
             }
-            
+            if (AlloutCount == RandomList.Count)
+            {
+                textviewScore.Text = "OUT";
+            }
+            else
+            {
+                textviewScore.Text = StrikeCount + "S" + BallCount + "B";
+            }
+
+
+
+
+
+
         }
         
 
