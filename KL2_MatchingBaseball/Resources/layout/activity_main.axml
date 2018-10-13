@@ -16,16 +16,17 @@
         android:textSize="50dp" />
     <Button
         android:text="base ball"
-        android:layout_width="405.5dp"
+        android:layout_width="390.5dp"
         android:layout_height="315.5dp"
         android:id="@+id/textiew2"
         android:layout_marginTop="0dp"
         android:layout_marginLeft="-380dp"
         android:textSize="100dp"
-        android:layout_marginBottom="53.5dp" />
+        android:layout_marginBottom="53.5dp"
+        android:layout_marginRight="0.0dp" />
     <Button
         android:text="help"
-        android:layout_width="378.5dp"
+        android:layout_width="382.5dp"
         android:layout_height="134.5dp"
         android:id="@+id/help"
         android:layout_marginTop="250dp"
