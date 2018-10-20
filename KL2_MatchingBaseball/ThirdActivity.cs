@@ -34,12 +34,30 @@ namespace KL2_MatchingBaseball
             SetContentView(Resource.Layout.SideAct3_Layout);
 
             Random random = new Random();
-            for (int i = 1; i <= 3; i++)
+            for (int i = 0; i < 3; i++)
             {
 
-                RandomNum = random.Next(0,9);
+                RandomNum = random.Next(0, 9);
+                if (RandomList.Count == 0)
+                {
+                    RandomList.Add(RandomNum);
+                }
+                else {
+                    for (int j = 0; j < RandomList.Count; j++)
+                    {
+                        if (RandomList[j] != RandomNum)
+                        {
+
+                            RandomList.Add(RandomNum);
+                        }
+                        else {
+                            i--;
+                        }
+                    }
+                }
                 
-                RandomList.Add(RandomNum);
+                
+                
             }
 
             string Randomnum = Convert.ToString(RandomNum);
@@ -104,6 +122,7 @@ namespace KL2_MatchingBaseball
                     }
 
                 }
+                
                 if (outCount == comparing.Count)
                 {
                     AlloutCount++;
@@ -116,7 +135,7 @@ namespace KL2_MatchingBaseball
             }
             else
             {
-                textviewScore.Text = StrikeCount + "S" + BallCount + "B";
+                textviewScore.Text = strikeCount + "S" + ballCount + "B";
             }
 
 
@@ -147,6 +166,8 @@ namespace KL2_MatchingBaseball
             textview.Text = "";
             comparing.Clear();
             textviewScore.Text = "";
+            ballCount = 0;
+            strikeCount = 0;
         }
 
         private void Button9_Click(object sender, EventArgs e)
