@@ -38,7 +38,7 @@ namespace KL2_MatchingBaseball
 
 
 
-            for (int i2 = 0; i2 <= 4; i2++)
+            for (int i2 = 0; i2 < 4; i2++)
             {
                 RandomNum2 = random2.Next(0, 9);
                 RandomList2.Add(RandomNum2);
@@ -87,7 +87,13 @@ namespace KL2_MatchingBaseball
         private void X_Click(object sender, EventArgs e)
         {
             text.Text = "";
-            textviewScore2.Text = ""; 
+            textviewScore2.Text = "";
+
+            Strike_Count2 = 0;
+            Ball_Count2 = 0;
+            Out_Count2 = 0;
+            All_Out2 = 0;
+            text.Text = "";
         }
 
 
@@ -114,24 +120,34 @@ namespace KL2_MatchingBaseball
                     {
                         Out_Count2++;
                     }
-
-                    if (Out_Count2 == comparing2.Count)
-                    {
-                        Out_Count2 = 0;
-                        All_Out2++;
-                    }
-
                 }
-                textviewScore2.Text = Strike_Count2 + "S " + Ball_Count2 + "B";
-                if(All_Out2 == 4)
+                if (Out_Count2 == 4)
                 {
-                    All_Out2 = 0;
-                    textviewScore2.Text = "0ut";
+                    Out_Count2 = 0;
+                    All_Out2++;
                 }
+            }
+
+            if (All_Out2 == 4)
+            {
+                textviewScore2.Text = "전부아웃입니닼";
+
                 Strike_Count2 = 0;
                 Ball_Count2 = 0;
-                text.Text = "";
+                Out_Count2 = 0;
+                All_Out2 = 0;
             }
+
+            else
+            {
+                textviewScore2.Text = Strike_Count2 + "S " + Ball_Count2 + "B" + "입니닼";
+
+                Strike_Count2 = 0;
+                Ball_Count2 = 0;
+                Out_Count2 = 0;
+                All_Out2 = 0;
+            }
+            text.Text = "";
         }
 
 
