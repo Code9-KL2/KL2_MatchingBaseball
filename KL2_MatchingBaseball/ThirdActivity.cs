@@ -15,14 +15,12 @@ namespace KL2_MatchingBaseball
 
     public class ThirdActivity : Activity
     {
-        int BallCount = 0;
-        int StrikeCount = 0;
+
         int strikeCount = 0;
         int ballCount = 0;
         int outCount = 0;
         int AlloutCount = 0;
         TextView textview;
-        string RandomString;
         int RandomNum;
         List<int> comparing = new List<int>();
         List<int> test = new List<int>();
@@ -47,12 +45,16 @@ namespace KL2_MatchingBaseball
                     {
                         if (RandomList[j] != RandomNum)
                         {
-
                             RandomList.Add(RandomNum);
+                            
                         }
-                        else {
+                        else
+                        {
+                            RandomNum = 0;
                             i--;
+                            
                         }
+                        break;
                     }
                 }
                 
